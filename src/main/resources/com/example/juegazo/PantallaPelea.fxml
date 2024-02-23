@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="fondo" prefHeight="845.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.juegazo.Controladores.PeleaController">
+   <children>
+      <ImageView fx:id="imgFondo" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="-280.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgPj1" fitHeight="150.0" fitWidth="200.0" layoutX="230.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgPj2" fitHeight="150.0" fitWidth="200.0" layoutX="1206.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgLanzamientoPj1" fitHeight="150.0" fitWidth="200.0" layoutX="-227.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imgLanzamientoPj2" fitHeight="150.0" fitWidth="200.0" layoutX="-227.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true" />
+      <ProgressBar fx:id="vidaPj1" layoutX="109.0" layoutY="77.0" prefHeight="58.0" prefWidth="382.0" progress="0.0" />
+      <ProgressBar fx:id="vidaPj2" layoutX="1049.0" layoutY="77.0" prefHeight="58.0" prefWidth="382.0" progress="0.0" />
+      <Text fx:id="nomPj1" fill="WHITE" layoutX="130.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="339.6034240722656">
+      <font>
+         <Font name="Noto Serif Hebrew Regular" size="30.0" />
+      </font>
+      <effect>
+         <DropShadow height="11.86" radius="6.23" spread="0.89" width="15.06" />
+      </effect>
+      </Text>
+      <Text fx:id="nomPj2" fill="WHITE" layoutX="1070.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="339.6034240722656">
+         <font>
+            <Font name="Noto Serif Hebrew Regular" size="30.0" />
+         </font>
+         <effect>
+            <DropShadow height="11.86" radius="6.23" spread="0.89" width="15.06" />
+         </effect>
+      </Text>
+      <Button fx:id="btnSuperPj1" layoutX="226.0" layoutY="246.0" mnemonicParsing="false" onAction="#superAtaque" text="Super">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btnSuperPj2" layoutX="1189.0" layoutY="246.0" mnemonicParsing="false" onAction="#superAtaqueR" text="super">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btnAtaque1Pj1" layoutX="109.0" layoutY="195.0" mnemonicParsing="false" onAction="#ataque1" text="Ataque 1">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btnVolver" layoutX="40.0" layoutY="23.0" mnemonicParsing="false" onAction="#volver" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btnAtaque1Pj2" layoutX="1072.0" layoutY="195.0" mnemonicParsing="false" onAction="#ataque1R" text="Ataque 1">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btnAtaque2Pj1" layoutX="313.0" layoutY="195.0" mnemonicParsing="false" onAction="#ataque2" text="Ataque 2">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btnAtaque2Pj2" layoutX="1276.0" layoutY="196.0" mnemonicParsing="false" onAction="#ataque2R" text="Ataque 2">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="btnMute" layoutX="1454.0" layoutY="40.0" mnemonicParsing="false" onAction="#mute" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <ProgressBar fx:id="cargaPj1" layoutX="109.0" layoutY="144.0" prefHeight="18.0" prefWidth="322.0" progress="0.0" />
+      <ProgressBar fx:id="cargaPj2" layoutX="1108.0" layoutY="144.0" prefHeight="18.0" prefWidth="322.0" progress="0.0" />
+      <Rectangle fx:id="negro" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="595.0" layoutY="-248.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   </children>
+</AnchorPane>

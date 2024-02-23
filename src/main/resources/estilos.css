@@ -1,0 +1,29 @@
+.button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-font-size: 30px;
+    -fx-font-family: "Noto Serif Hebrew Regular";
+}
+
+#btnAtaque1Pj1, #btnAtaque2Pj1, #btnSuperPj1, #btnAtaque1Pj2, #btnAtaque2Pj2, #btnSuperPj2{
+    -fx-text-fill: white;
+        -fx-effect: dropshadow(gaussian, blue, 2, 0, 0, 0);
+}
+
+.progress-bar {
+    -fx-background-radius: 10;
+}
+
+#vidaPj1, #vidaPj2 {
+    -fx-accent: rgba(0, 255, 0, 1.0);
+}
+
+.progress-bar .track {
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
+
+.progress-bar .bar {
+    -fx-background-radius: 10;
+    -fx-background-insets: 0;
+}
